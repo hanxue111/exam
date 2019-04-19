@@ -1,0 +1,142 @@
+*{
+	margin: 0;
+	padding: 0;
+	
+}
+body{
+	min-width: 1200px;
+}
+ul{
+	list-style: none;
+}
+/*页面最顶部的黑色导航*/
+.navBlack{
+	background-color:#222222;
+	width: 100%;
+	height: 28px;
+}
+.navBlack i{
+	padding:0 10px;
+	font-size: 15px;
+}
+/*黑色导航中集团网站*/
+.website{
+	float: left;
+	color: white;
+	line-height: 28px;
+	margin-left: 80px;
+	font-size:12px ;
+}
+.website a{
+	color: white;
+}
+/*黑色导航中集团网站的隐藏部分*/
+.websiteShow{
+	width: 100%;
+	height: 150px;
+	display: none;
+}
+.websiteCenter{
+	width: 88%;
+	margin: 40px auto;
+	font-size: 0;
+}
+.websiteCenter li{
+	display: inline-block;
+	width: 18%;
+	font-size:14px ;
+	padding-right: 77px;
+	line-height: 1.85;
+	
+}
+.websiteCenter a>h3{
+	color: #F66F6A;
+	margin-bottom: 3px;
+}
+.websiteCenter a{
+	color: black;
+	text-decoration:none;
+}
+/*黑色导航，右侧选择区域语言的下拉菜单*/
+.language{
+	float: right;
+	color: white;
+	line-height: 28px;
+	font-size:12px ;
+	margin-right: 20px;
+}
+ .language a{
+	color: white;
+}
+/*黑色导航中选择区域/语言的隐藏部分*/
+.languageShow{
+	width: 100%;
+	height: 310px;
+	display: none;
+}
+.languageCenter{
+	width: 85%;
+	margin: 0 auto;	
+}
+.languageTop{
+	padding-top: 40px;
+}
+.languageBody{
+	 /*在父容器上使用font-size:0;可以inline-block消除间隙*/
+	font-size: 0;
+	 /*对于Chrome, 其默认有最小字体大小限制，考虑到兼容性，需要取消字体大小限制*/
+	webkit-text-size-adjust:none;
+}
+.languageBody li{
+	width: 20%;
+	display: inline-block;
+	font-size:14px ;
+	padding-top:20px ;
+}
+.signIn{
+	float: right;
+	line-height: 28px;
+	font-size:12px ;
+	padding-left:10px ;
+	margin-right: 100px;
+	border-left: 2px #919191 solid;
+}
+.signIn a{
+	color: white;
+}
+
+/*顶部白色的导航，选项卡,搜索框*/
+.navWhite{
+	width: 100%;
+	height: 74px;
+	background-color: #fff;
+	box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.2);
+	top: 100px;
+}
+.container{
+	/*width: 1106px;*/
+	margin: 0 80px;
+}
+.container img{
+	width: 135px;
+	margin-top: 22px;
+}
+.logo{
+	width: 200px;
+	height: 74px;
+	float: left;
+}
+.clearfix li{
+	display: inline-block;
+	line-height: 74px;
+	padding-right:30px ;
+	font-size: 18px;
+}
+.contactLeft{
+	display: inline-block;
+}
+.contactRight{
+	display: inline-block;
+	border-left: 2px #D4D4D4 solid;
+	padding-left: 30px;
+}
