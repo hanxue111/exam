@@ -4,8 +4,9 @@
 	
 }
 body{
-	min-width: 1200px;
+	min-width: 1000px;
 }
+
 ul{
 	list-style: none;
 }
@@ -45,7 +46,7 @@ ul{
 	display: inline-block;
 	width: 18%;
 	font-size:14px ;
-	padding-right: 77px;
+	padding-right: 76px;
 	line-height: 1.85;
 	
 }
@@ -132,11 +133,194 @@ ul{
 	padding-right:30px ;
 	font-size: 18px;
 }
+.contact a{
+	text-decoration: none;
+	color: #545454;
+}
 .contactLeft{
 	display: inline-block;
+}
+.contactLeft1 img{
+	width: 23px;
+    padding-right:20px;
+	vertical-align: middle;
+	padding-bottom: 20px;
+}
+.contactLeft2 img{
+	width: 38px;
+    padding-right:20px;
+	vertical-align: middle;
+	padding-bottom: 22px;
+}
+/*白色导航中“手机，笔记本&平板...”的隐藏部分*/
+.contactLeftShow1{
+	width: 100%;
+	height: 410px;
+	background-color: #F5F5F5;
+	display: none;
+	/*z-index: 111;*/
+}
+.leftShow1Center{
+	font-size: 0;
+	width: 86%;
+	margin: 0 auto;
+}
+.Show1-lt{
+	margin: 40px 0;
+	display: inline-block;
+	width: 25%;
+}
+.Show1-mi{
+	display: inline-block;
+	width: 58%;
+	font-size: 14px;
+}
+.Show1-mi li{
+	display: inline-block;
+	width: 32%;
+	padding-top: 70px;
+}
+.Show1-mi img{
+	padding-left: 20px;
+}
+.miText{
+	padding-left:50px ;
+}
+.Show1-rt{
+	background-color:#EBEBEB;
+	float: right;
+	width: 17%;
+	height: 410px;
+	font-size: 14px;
+	
+}
+.rt-text{
+	margin-top: 40px;
+	margin-bottom: 20px;
+	padding-left: 25px;
+	letter-spacing: 1px;
+}
+.Show1-rt li{
+	line-height: 30px;
+	padding-left: 25px;
+}
+.Show1-rt a{
+	color: black;
+	text-decoration: none;
+}
+/*白色导航中解决方案&服务的隐藏部分*/
+.contactLeftShow2{
+	width: 100%;
+	/*height: 410px;*/
+	background-color: #F5F5F5;
+	display: none;
+}
+.leftShow2Center{
+
+}
+.show2_head{
+	width: 100%;
+    border-bottom: 2px black solid ;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+}
+.show2_headText{
+	width: 50%;
+	margin: 0 auto;
+}
+.show2_headText li{
+	display: inline-block;
+	padding-right: 100px;
+}
+.bodyfir{
+	width: 80%;
+	margin: 0 auto;
+	font-size: 0;
+	height: 328px;
+}
+.body1{
+	width: 100%;
+	background-color: #F5F5F5;
+	display: block;
+	height: 328px;
+}
+.body2{
+	width: 100%;
+	background-color: #F5F5F5;
+	display: none;
+	height: 328px;
+}
+.body3{
+	width: 100%;
+	background-color: #F5F5F5;
+	display: none;
+	height: 328px;
+}
+.bodyfirLi{
+	width: 83%;
+	display: inline-block;
+}
+
+.bodyfir1{
+	display: inline-block;
+	width: 33%;
+	font-size: 14px;
+	padding-top: 40px;
+}
+.bodyfir2{
+	display: inline-block;
+	width: 33%;
+	font-size: 14px;
+	padding-top: 40px;
+}
+.bodyfir1 li{
+	padding-top: 10px;
+	line-height: 20px;
+}
+.bodyfir2 li{
+	padding-top: 10px;
+	line-height: 20px;
+}
+.bodyfir1 a{
+	text-decoration: none;
+	color: #222222;
+}
+.bodyfir2 a{
+	text-decoration: none;
+	color: #222222;
+}
+.Show2-rt{
+	background-color:#EBEBEB;
+	float: right;
+	width: 17%;
+	height: 328px;
+	font-size: 14px;
+}
+.Show2-rt li{
+	line-height: 30px;
+	padding-left: 25px;
+}
+.Show2-rt a{
+	color: black;
+	text-decoration: none;
 }
 .contactRight{
 	display: inline-block;
 	border-left: 2px #D4D4D4 solid;
 	padding-left: 30px;
+}
+.contactRight i{
+	padding-left:10px ;
+}
+
+
+/*自适应的手机版本,当屏幕小于600px时,顶部黑色和白色的导航条全部消失*/
+@media only screen and (max-width:600px ) {
+	.navBlack{
+		display: none;
+	}
+	.navWhite{
+		display: none;
+	}
 }
