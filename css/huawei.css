@@ -324,3 +324,19 @@ ul{
 		display: none;
 	}
 }
+
+
+
+/*轮播图*/
+.banner{
+	width: 100%;
+	max-width: 1600px;
+	height: 600px;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+}
+
+.banner img{
+	
+}
