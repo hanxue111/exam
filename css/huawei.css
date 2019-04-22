@@ -333,10 +333,26 @@ ul{
 	max-width: 1600px;
 	height: 600px;
 	margin: 0 auto;
+	position: relative;
+}
+.bannerImg{
+	width: 100%;
+	height: 600px;
 	overflow: hidden;
 	position: relative;
 }
-
+.bannerImg li{
+	width: 100%;
+	height: 600px;
+	overflow: hidden;
+	float: left;
+}
+.bannerImg ul{
+	position: absolute;
+	left: 0;
+	top: 0;
+	/*width:8000px;*/
+}
 .banner img{
 	
 }
