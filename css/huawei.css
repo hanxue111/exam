@@ -4,7 +4,8 @@
 	
 }
 body{
-	min-width: 1000px;
+	/*min-width: 1000px;*/
+	background-color: #FAFAFA;
 }
 
 ul{
@@ -328,31 +329,406 @@ ul{
 
 
 /*轮播图*/
-.banner{
+ *{
+        margin: 0;
+        padding: 0;
+    }
+    #box{
+        width: 100%;
+        height: 500px;
+        max-width: 1600px;
+        position: relative;
+        margin:0 auto;
+        overflow: hidden;
+       
+    }
+    .ul_list{
+        width:6000px;
+        height: 500px;
+        position: absolute;
+    }
+    .li_list{
+        width: 1280px;
+        height: 500px;
+        list-style: none;
+        float: left;
+    }
+    .li_list img{
+        width: 100%;
+        height: 100%;
+    }
+    .odiv_nav{
+        position: absolute;
+        bottom: 120px;
+        left: 85%;
+        
+    }
+    .span_list{
+        width: 10px;
+        height: 10px;
+        border: 2px solid #3B3B3B;
+        border-radius:50%;
+        float: left;
+        margin-left: 15px;
+        cursor: pointer;
+    }
+    .left_click{
+        position: absolute;
+        width: 80px;
+        height: 400px;
+        font-size:4em;
+        color: white;
+        text-align: center;
+        line-height: 400px;
+        cursor: pointer;
+       
+    }
+    .right_click{
+        position: absolute;
+        right: 0px;
+        width: 80px;
+        height: 400px;
+        font-size:4em;
+        color: white;
+        text-align: center;
+        line-height: 400px;
+        cursor: pointer;
+        
+    }
+    .btn_left{
+        position: absolute;
+        left: -40px;
+        width: 40px;
+        height: 400px;
+        opacity: 0.5;
+        z-index: 9999;
+        box-shadow:40px 0px 150px white;
+        transition: all 0.2s;
+    }
+
+    .btn_right{
+        position: absolute;
+        right: -40px;
+        width: 40px;
+        height: 400px;
+        font-size: 4em;
+        box-shadow:-40px 0px 150px white;
+        opacity: 0.5;
+        z-index: 9999;
+        transition: all 0.2s;
+    }
+    
+
+
+
+/*轮播图底部三块分栏*/
+.bannerDown{
+	width: 80%;
+	height: 180px;
+	background-color:#FFFFFF;
+	max-width: 1600px;
+	margin: 0 auto;
+	border-radius: 5px;
+	bottom: 100px;
+	position: relative;
+	box-shadow: 0 0 100px rgba(0, 0, 0, 0.2);
+}
+.bannerDownCenter{
+	width: 90%;
+	margin: 0 auto;
+	font-size: 0;
+	padding:37px 0;
+}
+.bannerDownLi{
+	font-size:15px ;
+	width: 30%;
+	display: inline-block;
+	letter-spacing: 1px;
+}
+#bannerDownLi2{
+	border-left: 1px #545454 solid;
+	padding-left: 3%;
+}
+#bannerDownLi3{
+	border-left: 1px #545454 solid;
+	padding-left:4% ;
+}
+.bannerDownText{
+	width: 60%;
+	display: inline-block;
+	float: right;
+	padding-right:11% ;
+}
+.bannerDownText h3{
+	padding-bottom:10px ;
+}
+.bannerDownText h3:hover{
+	color: #F89A96;
+}
+.bannerDownText p{
+	line-height: 20px;
+	color: #666;
+}
+
+
+
+
+/*未来影像，手机照片部分-*/
+.product-callout {
+    display: block;
+    margin-bottom: 100px;
+    max-width: 1600px;
+    height: 600px;
+    margin: 0 auto;
+}
+.productCenter {
+    width: 100% !important;
+    max-width: 1600px;
+     
+}
+.row{
+	
+}
+.rowLeft{
+	display: inline-block;
+	width: 45%;
+	height: 380px;
+	background-color: #35BBDF;
+}
+.rowLeft img{
+	vertical-align: middle;
+	width: 40%;
+	height: 50px;
+	margin-top: 100px;
+	margin-left: 10%;
+}
+.rowRight{
+	display: inline-block;
+	float: right;
+	width: 35%;
+	margin-right: 10%;
+}
+.rowRightImg{
+	display: inline-block;
+	float: right;
+	width: 100%;
+	height: 250px;
+}
+.rowRightImg img{
+	width: 100%;	
+	height: 250px;
+}
+.rowRightText{
+	display: inline-block;
+	float: right;
+	width: 100%;
+	height: 350px;
+	background-color: #DDE6ED;
+	border-bottom: 5px;
+}
+
+
+
+/*折叠屏手机图片部分*/
+.picture5G{
 	width: 100%;
 	max-width: 1600px;
-	height: 600px;
-	margin: 0 auto;
+	height: 520px;
 	position: relative;
+	margin-bottom: 100px;
+	margin: 100px auto;
 }
-.bannerImg{
+.picture5G1{
 	width: 100%;
-	height: 600px;
-	overflow: hidden;
-	position: relative;
-}
-.bannerImg li{
-	width: 100%;
-	height: 600px;
-	overflow: hidden;
-	float: left;
-}
-.bannerImg ul{
+	max-width: 1600px;
 	position: absolute;
-	left: 0;
-	top: 0;
-	/*width:8000px;*/
 }
-.banner img{
-	
+.picture5G1 img{
+	width: 100%;
+}
+.picture5G2 img{
+	width: 30%;
+	position: absolute;
+	z-index: 10;
+	left: 740px;
+	top: 80px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*展会活动的轮播图*/
+.active{
+	display: block;
+	width: 100%;
+	height: 600px;
+	max-width: 1600px;
+	margin-bottom: 100px;
+	margin: 100px auto;
+}
+.activeCenter{
+	width: 90%;
+	margin: 0 auto;
+}
+.activeTitle{
+	display: inline-block;
+	margin-bottom: 50px;
+}
+.activeText a{
+	float: right;
+	text-decoration: none;
+	color: #222222;
+	font-size: 20px;
+}
+.activeBanner{
+	width: 100%;
+	height: 500px;
+	background-color: #666666;
+}
+/*成功故事*/
+.success{
+	display: block;
+	width: 100%;
+	height: 600px;
+	max-width: 1600px;
+	margin-bottom: 100px;
+	margin: 100px auto;
+}
+.successCenter{
+	width: 90%;
+	margin: 0 auto;
+}
+.successTitle{
+	display: inline-block;
+	margin-bottom: 50px;
+}
+.successText a{
+	float: right;
+	text-decoration: none;
+	color: #222222;
+	font-size: 20px;
+}
+.successBody{
+	width: 100%;
+	height: 450px;
+	margin: 0 3%;
+}
+.successBody img{
+	width: 100%;
+}
+.successLi{
+	width: 27%;
+	float: left;
+	background-color: #DDE6ED;
+	height: 450px;
+}
+#successLi2{
+	margin: 0 6%;
+}
+.successBodyT{
+	width: 80%;
+	margin: 0 auto;
+	height: 250px;
+}
+.successBodyT1{
+	line-height: 40px;
+}
+.successBodyT2{
+	margin-top: 20px;
+	line-height: 30px;
+}
+.successBodyTMore{
+	margin-top: 50px;
+	font-size: 25px;
+}
+
+
+/*近期新闻*/
+.news{
+	display: block;
+	width: 100%;
+	height: 600px;
+	max-width: 1600px;
+	margin-bottom: 100px;
+	margin: 100px auto;
+}
+.newsCenter{
+	width: 90%;
+	margin: 0 auto;
+}
+.newsTitle{
+	display: inline-block;
+	margin-bottom: 50px;
+}
+.newsBody{
+	margin: 0 3%;
+}
+.newsText a{
+	float: right;
+	text-decoration: none;
+	color: #222222;
+	font-size: 20px;
+}
+.newsLeft{
+	width:38% ;
+	display: inline-block;
+	height: 500px;
+	background-color: #DDE6ED;
+}
+.newsLeft img{
+	width:100%;
+	height: 230px;
+}
+.newsLeftT{
+	width: 80%;
+	margin: 0 auto;
+	height: 250px;
+}
+.newsLeftT1{
+	line-height: 40px;
+}
+.newsLeftT2{
+	margin-top: 15px;
+	line-height: 30px;
+}
+.newsLeftTMore{
+	margin-top: 60px;
+	font-size: 25px;
+}
+.newsRight{
+	display: inline-block;
+	width: 50%;
+	float: right;
+}
+.newsList{
+	width: 100%;
+	height: 130px;
+}
+.newsDate{
+	color: #666666;
+	font-size:14px ;
+}
+.newsList a{
+	text-decoration: none;
+	color: #000000;
+	line-height: 40px;
+}
+
+
+
+/*底部介绍*/
+.bottom{
+	display: block;
+	width: 100%;
+	height: 600px;
+	max-width: 1600px;
+	margin: 100px auto;
+	background-color: #F0F0F0;
 }
