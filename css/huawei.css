@@ -317,7 +317,7 @@ ul{
 
 
 /*自适应的手机版本,当屏幕小于600px时,顶部黑色和白色的导航条全部消失*/
-@media only screen and (max-width:600px ) {
+@media only screen and (max-width:981px ) {
 	.navBlack{
 		display: none;
 	}
@@ -343,12 +343,12 @@ ul{
        
     }
     .ul_list{
-        width:6000px;
+        width:400%;
         height: 500px;
         position: absolute;
     }
     .li_list{
-        width: 1280px;
+        width: 25%;
         height: 500px;
         list-style: none;
         float: left;
@@ -484,10 +484,19 @@ ul{
 .productCenter {
     width: 100% !important;
     max-width: 1600px;
-     
+    position: relative;
+}
+.productImg img{
+}
+.productImg{
+	display: inline-block;
+	float: left;
+	position: absolute;
+	top: 60px;
+	left: 35%;
 }
 .row{
-	
+	height: 600px;
 }
 .rowLeft{
 	display: inline-block;
@@ -500,7 +509,21 @@ ul{
 	width: 40%;
 	height: 50px;
 	margin-top: 100px;
-	margin-left: 10%;
+	margin-left: 20%;
+}
+.rowLeftText{
+	margin-left: 20%;
+	margin-top: 10px;
+	color: #fff;
+}
+.rowLeftA{
+	margin-left: 20%;
+	margin-top: 70px;
+}
+.rowLeftA a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 22px;
 }
 .rowRight{
 	display: inline-block;
@@ -526,8 +549,27 @@ ul{
 	background-color: #DDE6ED;
 	border-bottom: 5px;
 }
-
-
+.rowRightT{
+	margin-left: 50px;
+	margin-top: 50px;
+}
+.rowRightT1{
+	margin-bottom: 20px;
+}
+.rowRightT2{
+	margin-bottom: 30px;
+}
+.rowRightT3{
+	font-size: 20px;
+}
+.rowRightT4{
+	font-size: 20px;
+	margin-top: 100px;
+}
+.rowRightT4 a{
+	text-decoration: none;
+	color: #000000;
+}
 
 /*折叠屏手机图片部分*/
 .picture5G{
@@ -592,6 +634,22 @@ ul{
 	height: 500px;
 	background-color: #666666;
 }
+.activeBanner1{
+	
+}
+.BannerLeft{
+	float: left;
+	width: 40%;
+	height: 500px;
+}
+.BannerLeftCenter{
+	background-color: #DCE6EE;
+}
+.BannerLeftText{}
+.BannerRight{
+	float: right;
+}
+.BannerRightCenter{}
 /*成功故事*/
 .success{
 	display: block;
@@ -727,8 +785,66 @@ ul{
 .bottom{
 	display: block;
 	width: 100%;
-	height: 600px;
+	height: 750px;
 	max-width: 1600px;
-	margin: 100px auto;
+	margin-top: 100px;
+	margin: 0 auto;
 	background-color: #F0F0F0;
+}
+.bottomText a{
+	text-decoration: none;
+	font-size: 16px;
+	color: #222222;
+}
+.bottom1{
+	width: 100%;
+	height: 320px;
+}
+.bottomText{
+	display: inline-block;
+	width: 14%;
+	float: left;
+	margin-top:50px ;
+	margin-left: 7%;
+	}
+.bottom li{
+line-height: 30px;
+}
+.bottomText h2{
+	margin-bottom: 20px;
+}
+.bottom2{
+	width: 100%;
+	height: 200px;
+}
+.bottom3{
+	width: 100%;
+	height: 200px;
+}
+
+
+
+
+/*页面最底部的黑色地址区域*/
+.endBlack{
+	width: 100%;
+	max-width: 1600px;
+	background-color:#222222 ;
+	height: 50px;
+	margin: 0 auto;
+	color: white;
+}
+.endBlackLeft{
+	float: left;
+	line-height: 50px;
+	margin-left: 7%;
+}
+.endBlackRight{
+	float: right;
+	line-height: 50px;
+	margin-right: 7%;
+}
+.endBlack a{
+	text-decoration: none;
+	color: white;
 }

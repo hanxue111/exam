@@ -86,7 +86,7 @@ $(".bd3").click(function(){
                     $(".span_list").css("backgroundColor","transparent");
                     $(".span_list").eq(num).css("backgroundColor","#3B3B3B");
                 }
-                $(".ul_list").animate({"marginLeft":-$(window).width()*num+"px"},580);//使用animate实行运动功能
+                $(".ul_list").animate({"marginLeft":-$("#box").width()*num+"px"},580);//使用animate实行运动功能
             },2000);
         }
 
@@ -95,7 +95,7 @@ $(".bd3").click(function(){
                 num=index;
                 $(".span_list").css("backgroundColor","transparent");
                 $(".span_list").eq(num).css("backgroundColor","#3B3B3B");
-                $(".ul_list").stop().animate({"marginLeft":-$(window).width()*num+"px"},580);
+                $(".ul_list").stop().animate({"marginLeft":-$("#box").width()*num+"px"},580);
             })
         });
 
@@ -114,7 +114,7 @@ $(".bd3").click(function(){
                 $(".span_list").css("backgroundColor","transparent");
                 $(".span_list").eq(num).css("backgroundColor","#3B3B3B");
             }
-            $(".ul_list").stop().animate({"marginLeft":-$(window).width()*num+"px"},580);
+            $(".ul_list").stop().animate({"marginLeft":-$("#box").width()*num+"px"},580);
 
         });
 
@@ -130,7 +130,7 @@ $(".bd3").click(function(){
                 $(".span_list").css("backgroundColor","transparent");
                 $(".span_list").eq(num).css("backgroundColor","#3B3B3B");
             }
-            $(".ul_list").stop().animate({"marginLeft":-$(window).width()*num+"px"},580);
+            $(".ul_list").stop().animate({"marginLeft":-$("#box").width()*num+"px"},580);
 
         });
  $(".left_click").hover(function(){//这里是实现左右按钮的阴影效果显示，用到了hover事件
