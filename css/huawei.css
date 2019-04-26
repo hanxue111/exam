@@ -181,6 +181,7 @@ ul{
 	width: 32%;
 	padding-top: 70px;
 }
+
 .Show1-mi img{
 	padding-left: 20px;
 }
@@ -329,10 +330,7 @@ ul{
 
 
 /*轮播图*/
- *{
-        margin: 0;
-        padding: 0;
-    }
+ 
     #box{
         width: 100%;
         height: 500px;
@@ -592,7 +590,7 @@ ul{
 	width: 30%;
 	position: absolute;
 	z-index: 10;
-	left: 740px;
+	left: 57%;
 	top: 80px;
 }
 
@@ -606,7 +604,7 @@ ul{
 
 
 
-/*展会活动的轮播图*/
+/*展会活动的轮播*/
 .active{
 	display: block;
 	width: 100%;
@@ -629,27 +627,146 @@ ul{
 	color: #222222;
 	font-size: 20px;
 }
-.activeBanner{
+/*展会活动的轮播*/
+.active{
+	display: block;
 	width: 100%;
-	height: 500px;
-	background-color: #666666;
+	height: 600px;
+	max-width: 1600px;
+	margin-bottom: 100px;
+	margin: 100px auto;
 }
+.activeTitle{
+	display: inline-block;
+	margin-bottom: 50px;
+}
+.activeText a{
+	float: right;
+	text-decoration: none;
+	color: #222222;
+	font-size: 20px;
+}
+.activeCenter{
+	margin-left:5% ;
+	width: 90%;
+	overflow: hidden;
+	height: 600px;
+	max-width: 1600px;
+	position: relative;
+	display: inline-block;
+}
+
+/*展会活动的轮播图轮播部分*/
+.activeBanner{
+	width: 300%;
+	height: 500px;
+	position: absolute;
+}
+/*展会活动的轮播图1*/
 .activeBanner1{
+	width: 33.3333333%;
+    height: 500px;
+    float: left;
+    
+}
+/*展会活动的轮播图2*/
+.activeBanner2{
 	
 }
+/*展会活动的轮播图公共的样式*/
 .BannerLeft{
 	float: left;
-	width: 40%;
+	width: 53%;
 	height: 500px;
 }
 .BannerLeftCenter{
 	background-color: #DCE6EE;
+	height: 380px;
+	margin-top: 60px;
+	border-bottom-left-radius: 10px;
+	border-top-left-radius: 10px;
 }
-.BannerLeftText{}
+.BannerLeftText{
+	
+}
 .BannerRight{
 	float: right;
+	width: 47%;
 }
-.BannerRightCenter{}
+.BannerRight img{
+	width: 100%;
+	height: 500px;
+	border-radius: 10px;
+}
+.BannerT{
+	margin-left:17%;
+	margin-right:10%;
+	line-height: 26px;
+}
+.BannerT1{
+	padding-top: 40px;
+	color: #4A4C4E;
+	font-size: 14px;
+}
+.BannerT2{
+	margin-top: 10px;
+}
+.BannerT3{
+	margin-top: 10px;
+	color: #4A4C4E;
+}
+.BannerT4{
+	margin-top: 10px;
+	font-size: 17px;
+	color: #4A4C4E;
+}
+.BannerT5{
+	margin-top: 30px;
+}
+.BannerT5 a{
+	font-size: 23px;
+	color: #000000;
+	text-decoration: none;
+}
+.odivNav{
+	width: 100px;
+	height: 30px;
+	padding-top:50px ;
+	margin: 0 auto;
+}
+.spanList{
+	    width: 10px;
+        height: 10px;
+        border: 2px solid #3B3B3B;
+        border-radius:50%;
+        float: left;
+        margin-left: 15px;
+        cursor: pointer;
+}
+ .leftClick{
+        position: absolute;
+        width: 5%;
+        height: 600px;
+        font-size:4em;
+        color: black;
+        text-align: center;
+        line-height: 600px;
+        cursor: pointer;
+        display: inline-block;
+       
+    }
+    .rightClick{
+        position: absolute;
+        width: 5%;
+        height: 600px;
+        font-size:4em;
+        color: black;
+        text-align: center;
+        line-height: 600px;
+        cursor: pointer;
+        display: inline-block;
+        
+    }
 /*成功故事*/
 .success{
 	display: block;
