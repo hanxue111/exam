@@ -7,7 +7,7 @@ body{
 	/*min-width: 1000px;*/
 	background-color: #FAFAFA;
 }
-
+img { max-width: 100%;}
 ul{
 	list-style: none;
 }
@@ -16,6 +16,11 @@ ul{
 	background-color:#222222;
 	width: 100%;
 	height: 28px;
+	margin: 0 auto;
+}
+.navBlackCenter{
+	margin: 0 auto;
+	max-width: 1600px;
 }
 .navBlack i{
 	padding:0 10px;
@@ -31,11 +36,14 @@ ul{
 }
 .website a{
 	color: white;
+	text-decoration: none;
 }
 /*黑色导航中集团网站的隐藏部分*/
 .websiteShow{
 	width: 100%;
 	height: 150px;
+	margin: 0 auto;
+	max-width: 1600px;
 	display: none;
 }
 .websiteCenter{
@@ -45,10 +53,11 @@ ul{
 }
 .websiteCenter li{
 	display: inline-block;
-	width: 18%;
+	width: 20%;
 	font-size:14px ;
-	padding-right: 76px;
+	padding-right: 5%;
 	line-height: 1.85;
+	vertical-align: top;
 	
 }
 .websiteCenter a>h3{
@@ -58,6 +67,17 @@ ul{
 .websiteCenter a{
 	color: black;
 	text-decoration:none;
+}
+/*集团网站的隐藏部分中向右动画图标*/
+#right1{
+	position: relative;
+}
+#right1:hover{
+	animation:mymove 500ms;
+}
+@keyframes mymove{
+	from{left: 0px;}
+	to{ left: 30px;}
 }
 /*黑色导航，右侧选择区域语言的下拉菜单*/
 .language{
@@ -69,6 +89,10 @@ ul{
 }
  .language a{
 	color: white;
+	text-decoration: none;
+}
+ .language a:hover{
+	text-decoration: underline;
 }
 /*黑色导航中选择区域/语言的隐藏部分*/
 .languageShow{
@@ -78,6 +102,7 @@ ul{
 }
 .languageCenter{
 	width: 85%;
+	max-width: 1600px;
 	margin: 0 auto;	
 }
 .languageTop{
@@ -95,6 +120,10 @@ ul{
 	font-size:14px ;
 	padding-top:20px ;
 }
+.languageBody a{
+	color: #222222;
+}
+/*黑色导航右侧登录*/
 .signIn{
 	float: right;
 	line-height: 28px;
@@ -105,34 +134,46 @@ ul{
 }
 .signIn a{
 	color: white;
+	text-decoration: none;
 }
 
-/*顶部白色的导航，选项卡,搜索框*/
+/*顶部白色的导航*/
 .navWhite{
 	width: 100%;
-	height: 74px;
+	height: 80px;
 	background-color: #fff;
 	box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.2);
 	top: 100px;
+	z-index: 100;
 }
 .container{
-	/*width: 1106px;*/
-	margin: 0 80px;
+	margin: 0 auto;
+	width: 88%;
+	max-width: 1600px;
 }
 .container img{
-	width: 135px;
+	width: 100%;
 	margin-top: 22px;
 }
 .logo{
-	width: 200px;
-	height: 74px;
-	float: left;
-}
+	width: 12%;
+	height: 80px;
+	padding-right: 3%;
+   float: left;
+   display: inline-block;
+  }
 .clearfix li{
 	display: inline-block;
-	line-height: 74px;
+	line-height: 80px;
 	padding-right:30px ;
 	font-size: 18px;
+}
+.contact {
+    width: 84%;
+    display: inline-block;
+}
+.contact1 {
+	display: inline-block;
 }
 .contact a{
 	text-decoration: none;
@@ -152,6 +193,81 @@ ul{
     padding-right:20px;
 	vertical-align: middle;
 	padding-bottom: 22px;
+}
+/*搜索框*/
+.search{
+	display: inline-block;
+	float: right;
+	line-height: 80px;
+	font-size: 20px;
+	margin-right: 3%;
+}
+.search-open {
+  position: absolute;
+  right: 0px;
+  left: auto;
+  margin-top: -45px;
+  z-index: -1;
+  width: 500px;
+  overflow: hidden;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: transform .3s, top .3s;
+  transform-origin: right center;
+  transform: scale3d(0, 0, 0);
+}
+.input{
+	display: none;
+	width: 50px;
+    margin-left: 50%;
+    height: 50px;
+}
+.formInput{
+	width: 300px;
+    border: 1px #D4D4D4 solid;
+    border-right: 0;
+    height: 45px;
+    margin-top: 15px;
+    padding-left: 20px;
+    border-bottom-left-radius: 5px;
+     border-top-left-radius: 5px;
+     outline:none;
+}
+
+button{
+	width: 30px;
+    height: 47px;
+    background-color: white;
+    border: 1px #D4D4D4 solid;
+    margin-left: -6px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+     border-left-style: none;
+     outline:none; 
+     padding-right: 20px;
+}
+/*搜索框遮罩*/
+/*body,.shadow{
+	overflow: hidden;
+}*/
+
+.mask{
+	 position: fixed;
+    top: 100px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: rgb(102, 102, 102);
+    z-index: 99;
+    opacity: 0.8;
+    display: none;
+}
+/*手机版的搜索框*/
+.searchPhoto{
+	float:right;
+	margin-right: 5%;
+	margin-top: 25px;
+	font-size: 25px;
+	display: none;
 }
 /*白色导航中“手机，笔记本&平板...”的隐藏部分*/
 .contactLeftShow1{
@@ -318,12 +434,40 @@ ul{
 
 
 /*自适应的手机版本,当屏幕小于600px时,顶部黑色和白色的导航条全部消失*/
-@media only screen and (max-width:981px ) {
+@media only screen and (max-width:768px ) {
+	/*黑色导航消失*/
 	.navBlack{
 		display: none;
 	}
-	.navWhite{
+	/*白色导航右边消失*/
+	.contact{
 		display: none;
+	}
+	/*轮播图底下三块介绍消失*/
+	.bannerDown{
+		display: none;
+	}
+	/*手机版三块介绍出现*/
+	.bannerDownPhoto{
+		display: block;
+	}
+	/*改变白色导航logo的样式*/
+	.logo{
+		width: 20%;
+		left: 0;
+	}
+	/*手机版搜索样式框出现*/
+	.searchPhoto{
+		display: block;
+	}
+	/*使第一个轮播导航居中*/
+	.odiv_nav{
+		left: 43%;
+		bottom: 70px;
+	}
+	/*最下方联系,详情的部分*/
+	.bannerDownText{
+		width: 50%;
 	}
 }
 
@@ -420,6 +564,28 @@ ul{
 
 
 /*轮播图底部三块分栏*/
+/*手机版样式*/
+.bannerDownPhoto{
+	width: 100%;
+	height: 150px;
+	box-shadow: 0 0 100px rgba(0, 0, 0, 0.2);
+	margin-bottom: 30px;
+	display: none;
+}
+.bannerDownPhotoLi{
+	height: 50px;
+	line-height: 50px;
+	padding: 0 3%;
+	margin: 0 auto;
+}
+
+.bDPLleft{
+	float: left;
+}
+.bDPLright{
+	float: right;
+}
+/*电脑版样式*/
 .bannerDown{
 	width: 80%;
 	height: 180px;
@@ -915,7 +1081,7 @@ ul{
 }
 .bottom1{
 	width: 100%;
-	height: 320px;
+	min-height: 320px;
 }
 .bottomText{
 	display: inline-block;

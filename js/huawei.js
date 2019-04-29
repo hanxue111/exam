@@ -3,14 +3,28 @@ $(document).ready(function() {
 	$(".website").click(function() {
 		$(".websiteShow").slideToggle();
 		$(".languageShow").hide();
+		//黑色导航隐藏部分图标的切换
+		$("#up1").toggle();
+		$("#down1").toggle();
 	});
-
+	
 	//黑色导航中选择区域/语言的隐藏部分	
 	$(".language").click(function() {
 		$(".languageShow").slideToggle();
 		$(".websiteShow").hide();
+		//黑色导航隐藏部分图标的切换
+		$("#up2").toggle();
+		$("#down2").toggle();
 	});
-
+	//白色导航中搜索框部分
+ 	$(".search").click(function(){
+ 		$(".mask").toggle();
+ 		$(".contact1").toggle();
+ 		$("#searchi").toggle();
+ 		$(".delete").toggle();
+ 		$(".input").toggle();
+ 	});
+    
 	//白色导航中“手机，笔记本&平板...”的隐藏部分
 	$(".contactLeft1").mouseenter(function() {
 		$(".contactLeftShow1").slideToggle();
