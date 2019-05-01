@@ -4,13 +4,13 @@
 	<head>
 		<meta charset="utf-8">
 		<title>华为 - 构建万物互联的智能世界 </title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-		<!--iewport是网页默认的宽度和高度，上面这行代码的意思是，网页宽度默认等于屏幕宽度（width=device-width），原始缩放比例（initial-scale=1）为1.0，即网页初始大小占屏幕面积的100%。 对于viewport属性，我是真正在接触移动web开发是才遇到的，一把的ps布局都是固定的960px，1000px这种。-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1, user-scalable=no">
+		<!--viewport是网页默认的宽度和高度，上面这行代码的意思是，网页宽度默认等于屏幕宽度（width=device-width），原始缩放比例（initial-scale=1）为1.0，即网页初始大小占屏幕面积的100%。 对于viewport属性，我是真正在接触移动web开发是才遇到的，一把的ps布局都是固定的960px，1000px这种。-->
 		<link rel="stylesheet" href="font-awesome/css/font-awesome.css" />
 		<link rel="stylesheet" href="css/huawei.css" />
 		<script type="text/javascript" src="js/jquery-3.4.0.js"></script>
 		<script type="text/javascript" src="js/huawei.js"></script>
-		<linkrel="stylesheet" media="only screen and (max-device-width:678px)" href="tinyScreen.css" ></linkrel="stylesheet">
+		<link rel="stylesheet" media="only screen and (max-width:768px)" href="css/tinyScreen.css" />
 	</head>
 
 	<body>
@@ -496,24 +496,36 @@
 
 			<div id="box">
 				<ul class="ul_list">
-					<li class="li_list"><img src="img/Hbanner-annualreport-bg.jpg" alt="" />
-						<span style="position: absolute; top: 120px; left: 80px;">
+					<!--第一张轮播图片-->
+					<li class="li_list" id="list1" style="position: relative; "><img src="img/Hbanner-annualreport-bg.jpg" alt="" />
+						<span id="li_list1fir">
 						<img src="img/hbanner1.png"/>
 					</span>
-						<span style="position: absolute; top: 280px; left: 80px;">
-						<a href="javascript:void(0)">了解更多</a>
+						<span id="li_list1sec" >
+						<a href="javascript:void(0)">了解更多 →</a>
 					</span>
 					</li>
-					<li class="li_list"><img src="img/hbanner_p30pro_cn_v3.jpg" alt="" /></li>
-					<li class="li_list"><img src="img/hbanner-hwsafer-bg.jpg" alt="" />
-						<span style="position: absolute; top: 120px; left: 80px;">轮值董事长郭平</span>
+					<!--第二张轮播图片-->
+					<li class="li_list" id="list2" style="position: relative;"><img src="img/hbanner_p30pro_cn_v3.jpg" alt="" />
+					<span  id="li_list2fir">
+						<a href="javascript:void(0)">点击购买 →</a>
+					</span>
 					</li>
-					<li class="li_list"><img src="img/Hbanner-annualreport-bg.jpg" alt="" />
-						<span style="position: absolute; top: 120px; left: 80px;">
+					<!--第三张轮播图片-->
+					<li class="li_list"  id="list3" style="position: relative;"><img src="img/hbanner-hwsafer-bg.jpg" alt="" />
+						<span id="li_list3fir">轮值董事长郭平 :</span>
+						<span id="li_list3sec">选择华为更安全</span>
+						<span id="li_list3thr">
+						<a href="javascript:void(0)">了解更多 →</a>
+					</span>
+					</li>
+					<!--第四张轮播图片-->
+					<li class="li_list"  id="list1" style="position: relative;"><img src="img/Hbanner-annualreport-bg.jpg" alt="" />
+						<span id="li_list1fir">
 						<img src="img/hbanner1.png"/>
 					</span>
-						<span style="position: absolute; top: 280px; left: 80px;">
-						<a href="javascript:void(0)">了解更多</a>
+						<span id="li_list1sec">
+						<a href="javascript:void(0)">了解更多 →</a>
 					</span>
 					</li>
 				</ul>
@@ -582,7 +594,7 @@
 								<img src="img/p30_logo_cn_2.png" />
 								<div class="rowLeftText">未来影像</div>
 								<div class="rowLeftA">
-									<a href="javascript:void(0)">了解更多</a>
+									<a href="javascript:void(0)">了解更多 →</a>
 								</div>
 							</div>
 							<div class="rowRight">
@@ -595,7 +607,7 @@
 										<h2 class="rowRightT2">HUAWEI Mate20 系列</h2>
 										<div class="rowRightT3">智慧新高度</div>
 										<div class="rowRightT4">
-											<a href="javascript:void(0)">立即购买</a>
+											<a href="javascript:void(0)">立即购买 →</a>
 										</div>
 									</div>
 								</div>
@@ -622,7 +634,7 @@
 						<div class="activeCenter">
 							<div class="activeText">
 								<h1 class="activeTitle">展会活动</h1>
-								<a href="javascript:void(0)">查看全部
+								<a href="javascript:void(0)">查看全部 
 									<i class="fa fa-angle-right"></i>
 								</a>
 							</div>
@@ -638,7 +650,7 @@
 													<div class="BannerT3">中国 · 上海 | 2019年04月24-25日</div>
 													<p class="BannerT4">“智慧金融”以华为芯片技术为基石；辅以移动互联、IoT、生物识别等技术，提升客户体验；以分布式数据计算为基础，打造智慧决策大脑；以云计算、SDN技术为基座，重塑支撑未来业务创新的IT架构...</p>
 													<div class="BannerT5">
-														<a href="javascript:void(0)">了解更多</a>
+														<a href="javascript:void(0)">了解更多 →</a>
 													</div>
 												</div>
 											</div>
@@ -661,7 +673,7 @@
 													<div class="BannerT3">英国 伦敦丨2019年6月11日</div>
 													<p class="BannerT4">本次论坛将围绕如何极简、快速、高效地大规模部署5G展开探讨。在此新愿景之下，来自华为和全球通信行业的高层以及决策者将携手合作，共同克服早期5G商用的挑战。</p>
 													<div class="BannerT5">
-														<a href="javascript:void(0)">了解更多</a>
+														<a href="javascript:void(0)">了解更多 →</a>
 													</div>
 												</div>
 											</div>
@@ -684,7 +696,7 @@
 													<div class="BannerT3">中国 · 上海 | 2019年04月24-25日</div>
 													<p class="BannerT4">“智慧金融”以华为芯片技术为基石；辅以移动互联、IoT、生物识别等技术，提升客户体验；以分布式数据计算为基础，打造智慧决策大脑；以云计算、SDN技术为基座，重塑支撑未来业务创新的IT架构...</p>
 													<div class="BannerT5">
-														<a href="javascript:void(0)">了解更多</a>
+														<a href="javascript:void(0)">了解更多 →</a>
 													</div>
 												</div>
 											</div>
@@ -722,7 +734,7 @@
 								<div class="successBodyT">
 									<div class="successBodyT1">商业故事</div>
 									<h3 class="successBodyT2">变“听彩铃”为“看彩铃”： 视频彩铃何以成云南最重要名片？</h3>
-									<div class="successBodyTMore" style="margin-top: 20px;">更多</div>
+									<div class="successBodyTMore" style="margin-top: 20px;">更多 →</div>
 								</div>
 							</div>
 							<div class="successLi" id="successLi2">
@@ -730,7 +742,7 @@
 								<div class="successBodyT">
 									<div class="successBodyT1">商业故事</div>
 									<h3 class="successBodyT2">铂金之都南非勒斯滕堡开采智慧城市金矿</h3>
-									<div class="successBodyTMore">更多</div>
+									<div class="successBodyTMore">更多 →</div>
 								</div>
 							</div>
 							<div class="successLi">
@@ -738,7 +750,7 @@
 								<div class="successBodyT">
 									<div class="successBodyT1">商业故事</div>
 									<h3 class="successBodyT2">Three UK：5G提升网络容量，创造酷炫应用</h3>
-									<div class="successBodyTMore">更多</div>
+									<div class="successBodyTMore">更多 →</div>
 								</div>
 							</div>
 						</div>
@@ -750,7 +762,7 @@
 					<div class="newsCenter">
 						<div class="newsText">
 							<h1 class="newsTitle">近期新闻</h1>
-							<a href="javascript:void(0)">查看全部
+							<a href="javascript:void(0)">查看全部 
 								<i class="fa fa-angle-right"></i>
 							</a>
 						</div>
@@ -761,7 +773,8 @@
 								<div class="newsLeftT">
 									<div class="newsLeftT1">新闻 | 2019年04月16日</div>
 									<h2 class="newsLeftT2">华为：持续创新，构建万物互联的智能世界</h2>
-									<div class="newsLeftTMore">更多</div>
+									<div class="newsLeftTMore">更多 →</div>
+									<div class="newsLeftTMore1" style="">华为公司第十六届全球分析师大会16日在深圳开幕。本届大会主题为“构建万物互联的智能世界”，华为与来自全球的680多名行业分析师、金融分析师、通讯、互联网、金融等行业意见领袖及媒体一起，共同探讨了如何以持续创新构建万物互联的智能世界。</div>
 								</div>
 							</div>
 							<ul class="newsRight">
@@ -864,66 +877,55 @@
 						</ul>
 					</div>
 					<div class="bottom2">
-						<ul class="bottomText">
+						<ul class="bottomText2">
 							<a href="javascript:void(0)">
 								<h2>业务入口</h2></a>
 							<li>
 								<a href="javascript:void(0)">招聘</a>
 							</li>
 							<li>
-								<a href="javascript:void(0)">供应商平台</a>
-							</li>
-						</ul>
-						<ul class="bottomText">
-							<li>
 								<a href="javascript:void(0)">开发者</a>
 							</li>
 							<li>
-								<a href="javascript:void(0)">除名查询</a>
-							</li>
-						</ul>
-						<ul class="bottomText">
-							<li>
 								<a href="javascript:void(0)">合作伙伴</a>
 							</li>
-						</ul>
-						<ul class="bottomText">
 							<li>
 								<a href="javascript:void(0)">产品定义社区</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)">供应商平台</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)">除名查询</a>
 							</li>
 						</ul>
 					</div>
 					<div class="bottom3">
-						<ul class="bottomText">
+						<ul class="bottomText2">
 							<a href="javascript:void(0)">
-								<h2>业务入口</h2></a>
+								<h2>相关网站</h2></a>
 							<li>
-								<a href="javascript:void(0)">招聘</a>
+								<a href="javascript:void(0)">华为商城</a>
 							</li>
 							<li>
-								<a href="javascript:void(0)">供应商平台</a>
+								<a href="javascript:void(0)">华为云</a>
 							</li>
-						</ul>
-						<ul class="bottomText">
+						
 							<li>
-								<a href="javascript:void(0)">开发者</a>
+								<a href="javascript:void(0)">华为智能光伏</a>
 							</li>
 							<li>
-								<a href="javascript:void(0)">除名查询</a>
+								<a href="javascript:void(0)">华为心声社区</a>
 							</li>
-						</ul>
-						<ul class="bottomText">
+						
 							<li>
-								<a href="javascript:void(0)">合作伙伴</a>
+								<a href="javascript:void(0)">华为海洋</a>
 							</li>
-						</ul>
-						<ul class="bottomText">
 							<li>
-								<a href="javascript:void(0)">产品定义社区</a>
+								<a href="javascript:void(0)">荣耀官网</a>
 							</li>
 						</ul>
 					</div>
-					<div class="bottom4"></div>
 				</div>
 
 				<!--页面最底部的黑色地址区域-->

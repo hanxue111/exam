@@ -1,144 +1,191 @@
-*{
+* {
 	margin: 0;
 	padding: 0;
-	
 }
-body{
+
+body {
 	/*min-width: 1000px;*/
 	background-color: #FAFAFA;
 }
-img { max-width: 100%;}
-ul{
+
+img {
+	max-width: 100%;
+}
+
+ul {
 	list-style: none;
 }
+
+
 /*页面最顶部的黑色导航*/
-.navBlack{
-	background-color:#222222;
+
+.navBlack {
+	background-color: #222222;
 	width: 100%;
 	height: 28px;
 	margin: 0 auto;
 }
-.navBlackCenter{
+
+.navBlackCenter {
 	margin: 0 auto;
 	max-width: 1600px;
 }
-.navBlack i{
-	padding:0 10px;
+
+.navBlack i {
+	padding: 0 10px;
 	font-size: 15px;
 }
+
+
 /*黑色导航中集团网站*/
-.website{
+
+.website {
 	float: left;
 	color: white;
 	line-height: 28px;
 	margin-left: 80px;
-	font-size:12px ;
+	font-size: 12px;
 }
-.website a{
+
+.website a {
 	color: white;
 	text-decoration: none;
 }
+
+
 /*黑色导航中集团网站的隐藏部分*/
-.websiteShow{
+
+.websiteShow {
 	width: 100%;
 	height: 150px;
 	margin: 0 auto;
 	max-width: 1600px;
 	display: none;
 }
-.websiteCenter{
+
+.websiteCenter {
 	width: 88%;
 	margin: 40px auto;
 	font-size: 0;
 }
-.websiteCenter li{
+
+.websiteCenter li {
 	display: inline-block;
 	width: 20%;
-	font-size:14px ;
+	font-size: 14px;
 	padding-right: 5%;
 	line-height: 1.85;
 	vertical-align: top;
-	
 }
-.websiteCenter a>h3{
+
+.websiteCenter a>h3 {
 	color: #F66F6A;
 	margin-bottom: 3px;
 }
-.websiteCenter a{
+
+.websiteCenter a {
 	color: black;
-	text-decoration:none;
-}
-/*集团网站的隐藏部分中向右动画图标*/
-#right1{
-	position: relative;
-}
-#right1:hover{
-	animation:mymove 500ms;
-}
-@keyframes mymove{
-	from{left: 0px;}
-	to{ left: 30px;}
-}
-/*黑色导航，右侧选择区域语言的下拉菜单*/
-.language{
-	float: right;
-	color: white;
-	line-height: 28px;
-	font-size:12px ;
-	margin-right: 20px;
-}
- .language a{
-	color: white;
 	text-decoration: none;
 }
- .language a:hover{
-	text-decoration: underline;
+
+
+/*集团网站的隐藏部分中向右动画图标*/
+
+#right1 {
+	position: relative;
 }
-/*黑色导航中选择区域/语言的隐藏部分*/
-.languageShow{
-	width: 100%;
-	height: 310px;
-	display: none;
+
+#right1:hover {
+	animation: mymove 500ms;
 }
-.languageCenter{
-	width: 85%;
-	max-width: 1600px;
-	margin: 0 auto;	
+
+@keyframes mymove {
+	from {
+		left: 0px;
+	}
+	to {
+		left: 30px;
+	}
 }
-.languageTop{
-	padding-top: 40px;
-}
-.languageBody{
-	 /*在父容器上使用font-size:0;可以inline-block消除间隙*/
-	font-size: 0;
-	 /*对于Chrome, 其默认有最小字体大小限制，考虑到兼容性，需要取消字体大小限制*/
-	webkit-text-size-adjust:none;
-}
-.languageBody li{
-	width: 20%;
-	display: inline-block;
-	font-size:14px ;
-	padding-top:20px ;
-}
-.languageBody a{
-	color: #222222;
-}
-/*黑色导航右侧登录*/
-.signIn{
+
+
+/*黑色导航，右侧选择区域语言的下拉菜单*/
+
+.language {
 	float: right;
+	color: white;
 	line-height: 28px;
-	font-size:12px ;
-	padding-left:10px ;
-	margin-right: 100px;
-	border-left: 2px #919191 solid;
+	font-size: 12px;
+	margin-right: 20px;
 }
-.signIn a{
+
+.language a {
 	color: white;
 	text-decoration: none;
 }
 
+.language a:hover {
+	text-decoration: underline;
+}
+
+
+/*黑色导航中选择区域/语言的隐藏部分*/
+
+.languageShow {
+	width: 100%;
+	height: 310px;
+	display: none;
+}
+
+.languageCenter {
+	width: 85%;
+	max-width: 1600px;
+	margin: 0 auto;
+}
+
+.languageTop {
+	padding-top: 40px;
+}
+
+.languageBody {
+	/*在父容器上使用font-size:0;可以inline-block消除间隙*/
+	font-size: 0;
+	/*对于Chrome, 其默认有最小字体大小限制，考虑到兼容性，需要取消字体大小限制*/
+	webkit-text-size-adjust: none;
+}
+
+.languageBody li {
+	width: 20%;
+	display: inline-block;
+	font-size: 14px;
+	padding-top: 20px;
+}
+
+.languageBody a {
+	color: #222222;
+}
+
+
+/*黑色导航右侧登录*/
+
+.signIn {
+	float: right;
+	line-height: 28px;
+	font-size: 12px;
+	padding-left: 10px;
+	margin-right: 100px;
+	border-left: 2px #919191 solid;
+}
+
+.signIn a {
+	color: white;
+	text-decoration: none;
+}
+
+
 /*顶部白色的导航*/
-.navWhite{
+
+.navWhite {
 	width: 100%;
 	height: 80px;
 	background-color: #fff;
@@ -146,450 +193,545 @@ ul{
 	top: 100px;
 	z-index: 100;
 }
-.container{
+
+.container {
 	margin: 0 auto;
 	width: 88%;
 	max-width: 1600px;
 }
-.container img{
+
+.container img {
 	width: 100%;
 	margin-top: 22px;
 }
-.logo{
+
+.logo {
 	width: 12%;
 	height: 80px;
 	padding-right: 3%;
-   float: left;
-   display: inline-block;
-  }
-.clearfix li{
+	float: left;
+	display: inline-block;
+}
+
+.clearfix li {
 	display: inline-block;
 	line-height: 80px;
-	padding-right:30px ;
+	padding-right: 30px;
 	font-size: 18px;
 }
+
 .contact {
-    width: 84%;
-    display: inline-block;
+	width: 84%;
+	display: inline-block;
 }
+
 .contact1 {
 	display: inline-block;
 }
-.contact a{
+
+.contact a {
 	text-decoration: none;
 	color: #545454;
 }
-.contactLeft{
+
+.contactLeft {
 	display: inline-block;
 }
-.contactLeft1 img{
+
+.contactLeft1 img {
 	width: 23px;
-    padding-right:20px;
+	padding-right: 20px;
 	vertical-align: middle;
 	padding-bottom: 20px;
 }
-.contactLeft2 img{
+
+.contactLeft2 img {
 	width: 38px;
-    padding-right:20px;
+	padding-right: 20px;
 	vertical-align: middle;
 	padding-bottom: 22px;
 }
+
+
 /*搜索框*/
-.search{
+
+.search {
 	display: inline-block;
 	float: right;
 	line-height: 80px;
 	font-size: 20px;
 	margin-right: 3%;
 }
+
 .search-open {
-  position: absolute;
-  right: 0px;
-  left: auto;
-  margin-top: -45px;
-  z-index: -1;
-  width: 500px;
-  overflow: hidden;
-  -webkit-transition: -webkit-transform 0.5s;
-  transition: transform .3s, top .3s;
-  transform-origin: right center;
-  transform: scale3d(0, 0, 0);
-}
-.input{
-	display: none;
-	width: 50px;
-    margin-left: 50%;
-    height: 50px;
-}
-.formInput{
-	width: 300px;
-    border: 1px #D4D4D4 solid;
-    border-right: 0;
-    height: 45px;
-    margin-top: 15px;
-    padding-left: 20px;
-    border-bottom-left-radius: 5px;
-     border-top-left-radius: 5px;
-     outline:none;
+	position: absolute;
+	right: 0px;
+	left: auto;
+	margin-top: -45px;
+	z-index: -1;
+	width: 500px;
+	overflow: hidden;
+	-webkit-transition: -webkit-transform 0.5s;
+	transition: transform .3s, top .3s;
+	transform-origin: right center;
+	transform: scale3d(0, 0, 0);
 }
 
-button{
-	width: 30px;
-    height: 47px;
-    background-color: white;
-    border: 1px #D4D4D4 solid;
-    margin-left: -6px;
-    border-bottom-right-radius: 5px;
-    border-top-right-radius: 5px;
-     border-left-style: none;
-     outline:none; 
-     padding-right: 20px;
+.input {
+	display: none;
+	width: 50px;
+	margin-left: 50%;
+	height: 50px;
 }
+
+.formInput {
+	width: 300px;
+	border: 1px #D4D4D4 solid;
+	border-right: 0;
+	height: 45px;
+	margin-top: 15px;
+	padding-left: 20px;
+	border-bottom-left-radius: 5px;
+	border-top-left-radius: 5px;
+	outline: none;
+}
+
+button {
+	width: 30px;
+	height: 47px;
+	background-color: white;
+	border: 1px #D4D4D4 solid;
+	margin-left: -6px;
+	border-bottom-right-radius: 5px;
+	border-top-right-radius: 5px;
+	border-left-style: none;
+	outline: none;
+	padding-right: 20px;
+}
+
+
 /*搜索框遮罩*/
+
+
 /*body,.shadow{
 	overflow: hidden;
 }*/
 
-.mask{
-	 position: fixed;
-    top: 100px;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
-    background: rgb(102, 102, 102);
-    z-index: 99;
-    opacity: 0.8;
-    display: none;
+.mask {
+	position: fixed;
+	top: 100px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	background: rgb(102, 102, 102);
+	z-index: 99;
+	opacity: 0.8;
+	display: none;
 }
+
+
 /*手机版的搜索框*/
-.searchPhoto{
-	float:right;
+
+.searchPhoto {
+	float: right;
 	margin-right: 5%;
 	margin-top: 25px;
 	font-size: 25px;
 	display: none;
 }
+
+
 /*白色导航中“手机，笔记本&平板...”的隐藏部分*/
-.contactLeftShow1{
+
+.contactLeftShow1 {
 	width: 100%;
 	height: 410px;
 	background-color: #F5F5F5;
 	display: none;
 	/*z-index: 111;*/
 }
-.leftShow1Center{
+
+.leftShow1Center {
 	font-size: 0;
 	width: 86%;
 	margin: 0 auto;
 }
-.Show1-lt{
+
+.Show1-lt {
 	margin: 40px 0;
 	display: inline-block;
 	width: 25%;
 }
-.Show1-mi{
+
+.Show1-mi {
 	display: inline-block;
 	width: 58%;
 	font-size: 14px;
 }
-.Show1-mi li{
+
+.Show1-mi li {
 	display: inline-block;
 	width: 32%;
 	padding-top: 70px;
 }
 
-.Show1-mi img{
+.Show1-mi img {
 	padding-left: 20px;
 }
-.miText{
-	padding-left:50px ;
+
+.miText {
+	padding-left: 50px;
 }
-.Show1-rt{
-	background-color:#EBEBEB;
+
+.Show1-rt {
+	background-color: #EBEBEB;
 	float: right;
 	width: 17%;
 	height: 410px;
 	font-size: 14px;
-	
 }
-.rt-text{
+
+.rt-text {
 	margin-top: 40px;
 	margin-bottom: 20px;
 	padding-left: 25px;
 	letter-spacing: 1px;
 }
-.Show1-rt li{
+
+.Show1-rt li {
 	line-height: 30px;
 	padding-left: 25px;
 }
-.Show1-rt a{
+
+.Show1-rt a {
 	color: black;
 	text-decoration: none;
 }
+
+
 /*白色导航中解决方案&服务的隐藏部分*/
-.contactLeftShow2{
+
+.contactLeftShow2 {
 	width: 100%;
 	/*height: 410px;*/
 	background-color: #F5F5F5;
 	display: none;
 }
-.leftShow2Center{
 
-}
-.show2_head{
+.leftShow2Center {}
+
+.show2_head {
 	width: 100%;
-    border-bottom: 2px black solid ;
-    height: 80px;
-    line-height: 80px;
-    text-align: center;
+	border-bottom: 2px black solid;
+	height: 80px;
+	line-height: 80px;
+	text-align: center;
 }
-.show2_headText{
+
+.show2_headText {
 	width: 50%;
 	margin: 0 auto;
 }
-.show2_headText li{
+
+.show2_headText li {
 	display: inline-block;
 	padding-right: 100px;
 }
-.bodyfir{
+
+.bodyfir {
 	width: 80%;
 	margin: 0 auto;
 	font-size: 0;
 	height: 328px;
 }
-.body1{
+
+.body1 {
 	width: 100%;
 	background-color: #F5F5F5;
 	display: block;
 	height: 328px;
 }
-.body2{
+
+.body2 {
 	width: 100%;
 	background-color: #F5F5F5;
 	display: none;
 	height: 328px;
 }
-.body3{
+
+.body3 {
 	width: 100%;
 	background-color: #F5F5F5;
 	display: none;
 	height: 328px;
 }
-.bodyfirLi{
+
+.bodyfirLi {
 	width: 83%;
 	display: inline-block;
 }
 
-.bodyfir1{
+.bodyfir1 {
 	display: inline-block;
 	width: 33%;
 	font-size: 14px;
 	padding-top: 40px;
 }
-.bodyfir2{
+
+.bodyfir2 {
 	display: inline-block;
 	width: 33%;
 	font-size: 14px;
 	padding-top: 40px;
 }
-.bodyfir1 li{
+
+.bodyfir1 li {
 	padding-top: 10px;
 	line-height: 20px;
 }
-.bodyfir2 li{
+
+.bodyfir2 li {
 	padding-top: 10px;
 	line-height: 20px;
 }
-.bodyfir1 a{
+
+.bodyfir1 a {
 	text-decoration: none;
 	color: #222222;
 }
-.bodyfir2 a{
+
+.bodyfir2 a {
 	text-decoration: none;
 	color: #222222;
 }
-.Show2-rt{
-	background-color:#EBEBEB;
+
+.Show2-rt {
+	background-color: #EBEBEB;
 	float: right;
 	width: 17%;
 	height: 328px;
 	font-size: 14px;
 }
-.Show2-rt li{
+
+.Show2-rt li {
 	line-height: 30px;
 	padding-left: 25px;
 }
-.Show2-rt a{
+
+.Show2-rt a {
 	color: black;
 	text-decoration: none;
 }
-.contactRight{
+
+.contactRight {
 	display: inline-block;
 	border-left: 2px #D4D4D4 solid;
 	padding-left: 30px;
 }
-.contactRight i{
-	padding-left:10px ;
+
+.contactRight i {
+	padding-left: 10px;
 }
-
-
-/*自适应的手机版本,当屏幕小于600px时,顶部黑色和白色的导航条全部消失*/
-@media only screen and (max-width:768px ) {
-	/*黑色导航消失*/
-	.navBlack{
-		display: none;
-	}
-	/*白色导航右边消失*/
-	.contact{
-		display: none;
-	}
-	/*轮播图底下三块介绍消失*/
-	.bannerDown{
-		display: none;
-	}
-	/*手机版三块介绍出现*/
-	.bannerDownPhoto{
-		display: block;
-	}
-	/*改变白色导航logo的样式*/
-	.logo{
-		width: 20%;
-		left: 0;
-	}
-	/*手机版搜索样式框出现*/
-	.searchPhoto{
-		display: block;
-	}
-	/*使第一个轮播导航居中*/
-	.odiv_nav{
-		left: 43%;
-		bottom: 70px;
-	}
-	/*最下方联系,详情的部分*/
-	.bannerDownText{
-		width: 50%;
-	}
-}
-
 
 
 /*轮播图*/
- 
-    #box{
-        width: 100%;
-        height: 500px;
-        max-width: 1600px;
-        position: relative;
-        margin:0 auto;
-        overflow: hidden;
-       
-    }
-    .ul_list{
-        width:400%;
-        height: 500px;
-        position: absolute;
-    }
-    .li_list{
-        width: 25%;
-        height: 500px;
-        list-style: none;
-        float: left;
-    }
-    .li_list img{
-        width: 100%;
-        height: 100%;
-    }
-    .odiv_nav{
-        position: absolute;
-        bottom: 120px;
-        left: 85%;
-        
-    }
-    .span_list{
-        width: 10px;
-        height: 10px;
-        border: 2px solid #3B3B3B;
-        border-radius:50%;
-        float: left;
-        margin-left: 15px;
-        cursor: pointer;
-    }
-    .left_click{
-        position: absolute;
-        width: 80px;
-        height: 400px;
-        font-size:4em;
-        color: white;
-        text-align: center;
-        line-height: 400px;
-        cursor: pointer;
-       
-    }
-    .right_click{
-        position: absolute;
-        right: 0px;
-        width: 80px;
-        height: 400px;
-        font-size:4em;
-        color: white;
-        text-align: center;
-        line-height: 400px;
-        cursor: pointer;
-        
-    }
-    .btn_left{
-        position: absolute;
-        left: -40px;
-        width: 40px;
-        height: 400px;
-        opacity: 0.5;
-        z-index: 9999;
-        box-shadow:40px 0px 150px white;
-        transition: all 0.2s;
-    }
-
-    .btn_right{
-        position: absolute;
-        right: -40px;
-        width: 40px;
-        height: 400px;
-        font-size: 4em;
-        box-shadow:-40px 0px 150px white;
-        opacity: 0.5;
-        z-index: 9999;
-        transition: all 0.2s;
-    }
-    
 
 
+/*最外层盒子*/
 
+#box {
+	width: 100%;
+	height: 500px;
+	max-width: 1600px;
+	position: relative;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+
+/*横排存放四张图*/
+
+.ul_list {
+	width: 400%;
+	height: 500px;
+	position: absolute;
+}
+
+.li_list {
+	width: 25%;
+	height: 500px;
+	list-style: none;
+	float: left;
+}
+
+
+/*图片*/
+
+.li_list img {
+	width: 100%;
+	height: 100%;
+}
+
+
+/*轮播图底部索引*/
+
+.odiv_nav {
+	position: absolute;
+	bottom: 120px;
+	left: 85%;
+}
+
+
+/*轮播图底部索引*/
+
+.span_list {
+	width: 10px;
+	height: 10px;
+	border: 2px solid #3B3B3B;
+	border-radius: 50%;
+	float: left;
+	margin-left: 15px;
+	cursor: pointer;
+}
+
+
+/*左侧点击按钮*/
+
+.left_click {
+	position: absolute;
+	width: 80px;
+	height: 400px;
+	font-size: 4em;
+	color: white;
+	text-align: center;
+	line-height: 400px;
+	cursor: pointer;
+}
+
+
+/*右侧点击按钮*/
+
+.right_click {
+	position: absolute;
+	right: 0px;
+	width: 80px;
+	height: 400px;
+	font-size: 4em;
+	color: white;
+	text-align: center;
+	line-height: 400px;
+	cursor: pointer;
+}
+
+.btn_left {
+	position: absolute;
+	left: -40px;
+	width: 40px;
+	height: 400px;
+	opacity: 0.5;
+	z-index: 9999;
+	box-shadow: 40px 0px 150px white;
+	transition: all 0.2s;
+}
+
+.btn_right {
+	position: absolute;
+	right: -40px;
+	width: 40px;
+	height: 400px;
+	font-size: 4em;
+	box-shadow: -40px 0px 150px white;
+	opacity: 0.5;
+	z-index: 9999;
+	transition: all 0.2s;
+}
+
+
+/*轮播图图片样式*/
+
+#li_list1fir {
+	position: absolute;
+	top: 120px;
+	left: 80px;
+}
+
+#li_list2fir {
+	position: absolute;
+	top: 170px;
+	left: 47%;
+}
+#li_list1sec{
+	top: 250px;
+}
+#li_list1sec a{
+	text-decoration: none;
+	color: black;
+	font-size: 22px;
+}
+#li_list2fir a{
+	text-decoration: none;
+	color: black;
+	font-size: 22px;
+}
+#li_list3fir{
+	position: absolute;
+	top: 80px;
+	 left: 80px;
+	 font-size: 40px;
+	 color: white;
+}
+#li_list3sec{
+	position: absolute;
+	top: 140px;
+	 left: 80px;
+	 font-size: 55px;
+	 color: white;
+}
+#li_list3thr{
+	position: absolute;
+	top: 270px;
+	left: 80px;
+}
+#li_list3thr a{
+	text-decoration: none;
+	color: black;
+	font-size: 25px;
+}
 /*轮播图底部三块分栏*/
+
+
 /*手机版样式*/
-.bannerDownPhoto{
+
+.bannerDownPhoto {
 	width: 100%;
 	height: 150px;
 	box-shadow: 0 0 100px rgba(0, 0, 0, 0.2);
 	margin-bottom: 30px;
 	display: none;
 }
-.bannerDownPhotoLi{
+
+.bannerDownPhotoLi {
 	height: 50px;
 	line-height: 50px;
 	padding: 0 3%;
 	margin: 0 auto;
 }
 
-.bDPLleft{
+.bDPLleft {
 	float: left;
 }
-.bDPLright{
+
+.bDPLright {
 	float: right;
 }
+
+
 /*电脑版样式*/
-.bannerDown{
+
+.bannerDown {
 	width: 80%;
 	height: 180px;
-	background-color:#FFFFFF;
+	background-color: #FFFFFF;
 	max-width: 1600px;
 	margin: 0 auto;
 	border-radius: 5px;
@@ -597,115 +739,134 @@ button{
 	position: relative;
 	box-shadow: 0 0 100px rgba(0, 0, 0, 0.2);
 }
-.bannerDownCenter{
+
+.bannerDownCenter {
 	width: 90%;
 	margin: 0 auto;
 	font-size: 0;
-	padding:37px 0;
+	padding: 37px 0;
 }
-.bannerDownLi{
-	font-size:15px ;
+
+.bannerDownLi {
+	font-size: 15px;
 	width: 30%;
 	display: inline-block;
 	letter-spacing: 1px;
 }
-#bannerDownLi2{
+
+#bannerDownLi2 {
 	border-left: 1px #545454 solid;
 	padding-left: 3%;
 }
-#bannerDownLi3{
+
+#bannerDownLi3 {
 	border-left: 1px #545454 solid;
-	padding-left:4% ;
+	padding-left: 4%;
 }
-.bannerDownText{
+
+.bannerDownText {
 	width: 60%;
 	display: inline-block;
 	float: right;
-	padding-right:11% ;
+	padding-right: 11%;
 }
-.bannerDownText h3{
-	padding-bottom:10px ;
+
+.bannerDownText h3 {
+	padding-bottom: 10px;
 }
-.bannerDownText h3:hover{
+
+.bannerDownText h3:hover {
 	color: #F89A96;
 }
-.bannerDownText p{
+
+.bannerDownText p {
 	line-height: 20px;
 	color: #666;
 }
 
 
-
-
 /*未来影像，手机照片部分-*/
+
 .product-callout {
-    display: block;
-    margin-bottom: 100px;
-    max-width: 1600px;
-    height: 600px;
-    margin: 0 auto;
+	display: block;
+	margin-bottom: 100px;
+	max-width: 1600px;
+	height: 600px;
+	margin: 0 auto;
 }
+
 .productCenter {
-    width: 100% !important;
-    max-width: 1600px;
-    position: relative;
+	width: 100% !important;
+	max-width: 1600px;
+	position: relative;
 }
-.productImg img{
-}
-.productImg{
+
+.productImg img {}
+
+.productImg {
 	display: inline-block;
 	float: left;
 	position: absolute;
 	top: 60px;
 	left: 35%;
 }
-.row{
+
+.row {
 	height: 600px;
 }
-.rowLeft{
+
+.rowLeft {
 	display: inline-block;
 	width: 45%;
 	height: 380px;
 	background-color: #35BBDF;
 }
-.rowLeft img{
+
+.rowLeft img {
 	vertical-align: middle;
 	width: 40%;
 	height: 50px;
 	margin-top: 100px;
 	margin-left: 20%;
 }
-.rowLeftText{
+
+.rowLeftText {
 	margin-left: 20%;
 	margin-top: 10px;
 	color: #fff;
 }
-.rowLeftA{
+
+.rowLeftA {
 	margin-left: 20%;
 	margin-top: 70px;
 }
-.rowLeftA a{
+
+.rowLeftA a {
 	text-decoration: none;
 	color: #fff;
 	font-size: 22px;
 }
-.rowRight{
+
+.rowRight {
 	display: inline-block;
 	float: right;
 	width: 35%;
 	margin-right: 10%;
 }
-.rowRightImg{
+
+.rowRightImg {
 	display: inline-block;
 	float: right;
 	width: 100%;
 	height: 250px;
 }
-.rowRightImg img{
-	width: 100%;	
+
+.rowRightImg img {
+	width: 100%;
 	height: 250px;
 }
-.rowRightText{
+
+.rowRightText {
 	display: inline-block;
 	float: right;
 	width: 100%;
@@ -713,30 +874,38 @@ button{
 	background-color: #DDE6ED;
 	border-bottom: 5px;
 }
-.rowRightT{
+
+.rowRightT {
 	margin-left: 50px;
 	margin-top: 50px;
 }
-.rowRightT1{
+
+.rowRightT1 {
 	margin-bottom: 20px;
 }
-.rowRightT2{
+
+.rowRightT2 {
 	margin-bottom: 30px;
 }
-.rowRightT3{
+
+.rowRightT3 {
 	font-size: 20px;
 }
-.rowRightT4{
+
+.rowRightT4 {
 	font-size: 20px;
 	margin-top: 100px;
 }
-.rowRightT4 a{
+
+.rowRightT4 a {
 	text-decoration: none;
 	color: #000000;
 }
 
+
 /*折叠屏手机图片部分*/
-.picture5G{
+
+.picture5G {
 	width: 100%;
 	max-width: 1600px;
 	height: 520px;
@@ -744,15 +913,18 @@ button{
 	margin-bottom: 100px;
 	margin: 100px auto;
 }
-.picture5G1{
+
+.picture5G1 {
 	width: 100%;
 	max-width: 1600px;
 	position: absolute;
 }
-.picture5G1 img{
+
+.picture5G1 img {
 	width: 100%;
 }
-.picture5G2 img{
+
+.picture5G2 img {
 	width: 30%;
 	position: absolute;
 	z-index: 10;
@@ -761,17 +933,9 @@ button{
 }
 
 
-
-
-
-
-
-
-
-
-
 /*展会活动的轮播*/
-.active{
+
+.active {
 	display: block;
 	width: 100%;
 	height: 600px;
@@ -779,22 +943,28 @@ button{
 	margin-bottom: 100px;
 	margin: 100px auto;
 }
-.activeCenter{
+
+.activeCenter {
 	width: 90%;
 	margin: 0 auto;
 }
-.activeTitle{
+
+.activeTitle {
 	display: inline-block;
 	margin-bottom: 50px;
 }
-.activeText a{
+
+.activeText a {
 	float: right;
 	text-decoration: none;
 	color: #222222;
 	font-size: 20px;
 }
+
+
 /*展会活动的轮播*/
-.active{
+
+.active {
 	display: block;
 	width: 100%;
 	height: 600px;
@@ -802,18 +972,21 @@ button{
 	margin-bottom: 100px;
 	margin: 100px auto;
 }
-.activeTitle{
+
+.activeTitle {
 	display: inline-block;
 	margin-bottom: 50px;
 }
-.activeText a{
+
+.activeText a {
 	float: right;
 	text-decoration: none;
 	color: #222222;
 	font-size: 20px;
 }
-.activeCenter{
-	margin-left:5% ;
+
+.activeCenter {
+	margin-left: 5%;
 	width: 90%;
 	overflow: hidden;
 	height: 600px;
@@ -822,119 +995,141 @@ button{
 	display: inline-block;
 }
 
+
 /*展会活动的轮播图轮播部分*/
-.activeBanner{
+
+.activeBanner {
 	width: 300%;
 	height: 500px;
 	position: absolute;
 }
+
+
 /*展会活动的轮播图1*/
-.activeBanner1{
+
+.activeBanner1 {
 	width: 33.3333333%;
-    height: 500px;
-    float: left;
-    
+	height: 500px;
+	float: left;
 }
+
+
 /*展会活动的轮播图2*/
-.activeBanner2{
-	
-}
+
+.activeBanner2 {}
+
+
 /*展会活动的轮播图公共的样式*/
-.BannerLeft{
+
+.BannerLeft {
 	float: left;
 	width: 53%;
 	height: 500px;
 }
-.BannerLeftCenter{
+
+.BannerLeftCenter {
 	background-color: #DCE6EE;
 	height: 380px;
 	margin-top: 60px;
 	border-bottom-left-radius: 10px;
 	border-top-left-radius: 10px;
 }
-.BannerLeftText{
-	
-}
-.BannerRight{
+
+.BannerLeftText {}
+
+.BannerRight {
 	float: right;
 	width: 47%;
 }
-.BannerRight img{
+
+.BannerRight img {
 	width: 100%;
 	height: 500px;
 	border-radius: 10px;
 }
-.BannerT{
-	margin-left:17%;
-	margin-right:10%;
+
+.BannerT {
+	margin-left: 17%;
+	margin-right: 10%;
 	line-height: 26px;
 }
-.BannerT1{
+
+.BannerT1 {
 	padding-top: 40px;
 	color: #4A4C4E;
 	font-size: 14px;
 }
-.BannerT2{
+
+.BannerT2 {
 	margin-top: 10px;
 }
-.BannerT3{
+
+.BannerT3 {
 	margin-top: 10px;
 	color: #4A4C4E;
 }
-.BannerT4{
+
+.BannerT4 {
 	margin-top: 10px;
 	font-size: 17px;
 	color: #4A4C4E;
 }
-.BannerT5{
+
+.BannerT5 {
 	margin-top: 30px;
 }
-.BannerT5 a{
+
+.BannerT5 a {
 	font-size: 23px;
 	color: #000000;
 	text-decoration: none;
 }
-.odivNav{
+
+.odivNav {
 	width: 100px;
 	height: 30px;
-	padding-top:50px ;
+	padding-top: 50px;
 	margin: 0 auto;
 }
-.spanList{
-	    width: 10px;
-        height: 10px;
-        border: 2px solid #3B3B3B;
-        border-radius:50%;
-        float: left;
-        margin-left: 15px;
-        cursor: pointer;
+
+.spanList {
+	width: 10px;
+	height: 10px;
+	border: 2px solid #3B3B3B;
+	border-radius: 50%;
+	float: left;
+	margin-left: 15px;
+	cursor: pointer;
 }
- .leftClick{
-        position: absolute;
-        width: 5%;
-        height: 600px;
-        font-size:4em;
-        color: black;
-        text-align: center;
-        line-height: 600px;
-        cursor: pointer;
-        display: inline-block;
-       
-    }
-    .rightClick{
-        position: absolute;
-        width: 5%;
-        height: 600px;
-        font-size:4em;
-        color: black;
-        text-align: center;
-        line-height: 600px;
-        cursor: pointer;
-        display: inline-block;
-        
-    }
+
+.leftClick {
+	position: absolute;
+	width: 5%;
+	height: 600px;
+	font-size: 4em;
+	color: black;
+	text-align: center;
+	line-height: 600px;
+	cursor: pointer;
+	display: inline-block;
+}
+
+.rightClick {
+	position: absolute;
+	width: 5%;
+	height: 600px;
+	font-size: 4em;
+	color: black;
+	text-align: center;
+	line-height: 600px;
+	cursor: pointer;
+	display: inline-block;
+}
+
+
 /*成功故事*/
-.success{
+
+.success {
 	display: block;
 	width: 100%;
 	height: 600px;
@@ -942,57 +1137,69 @@ button{
 	margin-bottom: 100px;
 	margin: 100px auto;
 }
-.successCenter{
+
+.successCenter {
 	width: 90%;
 	margin: 0 auto;
 }
-.successTitle{
+
+.successTitle {
 	display: inline-block;
 	margin-bottom: 50px;
 }
-.successText a{
+
+.successText a {
 	float: right;
 	text-decoration: none;
 	color: #222222;
 	font-size: 20px;
 }
-.successBody{
+
+.successBody {
 	width: 100%;
 	height: 450px;
 	margin: 0 3%;
 }
-.successBody img{
+
+.successBody img {
 	width: 100%;
 }
-.successLi{
+
+.successLi {
 	width: 27%;
 	float: left;
 	background-color: #DDE6ED;
 	height: 450px;
 }
-#successLi2{
+
+#successLi2 {
 	margin: 0 6%;
 }
-.successBodyT{
+
+.successBodyT {
 	width: 80%;
 	margin: 0 auto;
 	height: 250px;
 }
-.successBodyT1{
+
+.successBodyT1 {
 	line-height: 40px;
 }
-.successBodyT2{
+
+.successBodyT2 {
 	margin-top: 20px;
 	line-height: 30px;
 }
-.successBodyTMore{
+
+.successBodyTMore {
 	margin-top: 50px;
 	font-size: 25px;
 }
 
 
 /*近期新闻*/
-.news{
+
+.news {
 	display: block;
 	width: 100%;
 	height: 600px;
@@ -1000,72 +1207,90 @@ button{
 	margin-bottom: 100px;
 	margin: 100px auto;
 }
-.newsCenter{
+
+.newsCenter {
 	width: 90%;
 	margin: 0 auto;
 }
-.newsTitle{
+
+.newsTitle {
 	display: inline-block;
 	margin-bottom: 50px;
 }
-.newsBody{
+
+.newsBody {
 	margin: 0 3%;
 }
-.newsText a{
+
+.newsText a {
 	float: right;
 	text-decoration: none;
 	color: #222222;
 	font-size: 20px;
 }
-.newsLeft{
-	width:38% ;
+
+.newsLeft {
+	width: 38%;
 	display: inline-block;
 	height: 500px;
 	background-color: #DDE6ED;
 }
-.newsLeft img{
-	width:100%;
+
+.newsLeft img {
+	width: 100%;
 	height: 230px;
 }
-.newsLeftT{
+
+.newsLeftT {
 	width: 80%;
 	margin: 0 auto;
 	height: 250px;
 }
-.newsLeftT1{
+
+.newsLeftT1 {
 	line-height: 40px;
 }
-.newsLeftT2{
+
+.newsLeftT2 {
 	margin-top: 15px;
 	line-height: 30px;
 }
-.newsLeftTMore{
+
+.newsLeftTMore {
 	margin-top: 60px;
 	font-size: 25px;
 }
-.newsRight{
+
+.newsLeftTMore1 {
+	display: none;
+}
+
+.newsRight {
 	display: inline-block;
 	width: 50%;
 	float: right;
 }
-.newsList{
+
+.newsList {
 	width: 100%;
 	height: 130px;
 }
-.newsDate{
+
+.newsDate {
 	color: #666666;
-	font-size:14px ;
+	font-size: 14px;
 }
-.newsList a{
+
+.newsList a {
 	text-decoration: none;
 	color: #000000;
 	line-height: 40px;
 }
 
 
-
 /*底部介绍*/
-.bottom{
+
+.bottom {
 	display: block;
 	width: 100%;
 	height: 750px;
@@ -1074,60 +1299,86 @@ button{
 	margin: 0 auto;
 	background-color: #F0F0F0;
 }
-.bottomText a{
+
+.bottomText a {
 	text-decoration: none;
 	font-size: 16px;
 	color: #222222;
 }
-.bottom1{
+
+.bottom1 {
 	width: 100%;
 	min-height: 320px;
 }
-.bottomText{
+
+.bottomText {
 	display: inline-block;
 	width: 14%;
 	float: left;
-	margin-top:50px ;
+	margin-top: 50px;
 	margin-left: 7%;
-	}
-.bottom li{
-line-height: 30px;
 }
-.bottomText h2{
+
+.bottom li {
+	line-height: 30px;
+}
+
+.bottomText h2 {
 	margin-bottom: 20px;
 }
-.bottom2{
+
+.bottomText2 {
+	width: 92%;
+	height: 125px;
+	margin-left: 7%;
+	margin-top: 50px;
+}
+
+.bottomText2 li {
+	width: 22%;
+	display: inline-block;
+}
+
+.bottomText2 a {
+	text-decoration: none;
+	font-size: 16px;
+	color: #222222;
+}
+
+.bottomText2 h2 {
+	margin-bottom: 20px;
+}
+
+.bottom3 {
 	width: 100%;
 	height: 200px;
 }
-.bottom3{
-	width: 100%;
-	height: 200px;
-}
-
-
 
 
 /*页面最底部的黑色地址区域*/
-.endBlack{
+
+.endBlack {
 	width: 100%;
 	max-width: 1600px;
-	background-color:#222222 ;
+	background-color: #222222;
 	height: 50px;
 	margin: 0 auto;
 	color: white;
 }
-.endBlackLeft{
+
+.endBlackLeft {
 	float: left;
 	line-height: 50px;
 	margin-left: 7%;
 }
-.endBlackRight{
+
+.endBlackRight {
 	float: right;
 	line-height: 50px;
 	margin-right: 7%;
 }
-.endBlack a{
+
+.endBlack a {
 	text-decoration: none;
 	color: white;
 }

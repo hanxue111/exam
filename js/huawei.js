@@ -25,6 +25,8 @@ $(document).ready(function() {
  		$(".input").toggle();
  	});
     
+
+
 	//白色导航中“手机，笔记本&平板...”的隐藏部分
 	$(".contactLeft1").mouseenter(function() {
 		$(".contactLeftShow1").slideToggle();

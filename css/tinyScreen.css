@@ -1,3 +1,314 @@
-.website{
+/*自适应的手机版本,当屏幕小于768px时,改变样式*/
+
+
+/*黑色导航消失*/
+
+.navBlack {
 	display: none;
+}
+
+
+/*白色导航右边消失*/
+
+.contact {
+	display: none;
+}
+/*轮播图第三张文字*/
+
+
+/*轮播图底下三块介绍消失*/
+
+.bannerDown {
+	display: none;
+}
+
+
+/*手机版三块介绍出现*/
+
+.bannerDownPhoto {
+	display: block;
+}
+
+
+/*改变白色导航logo的样式*/
+
+.logo {
+	width: 20%;
+	left: 0;
+}
+
+
+/*手机版搜索样式框出现*/
+
+.searchPhoto {
+	display: block;
+}
+
+
+/*使第一个轮播导航居中*/
+
+.odiv_nav {
+	left: 43%;
+	bottom: 40px;
+}
+
+
+/*未来影像左侧蓝色部分*/
+
+.rowLeft {
+	width: 100%;
+	margin-top: 100px;
+	margin-bottom: 50px;
+}
+
+
+/*未来影像手机图片部分*/
+
+.product-callout {
+	height: 1030px;
+}
+
+.productImg {
+	top: 0px;
+	left: 35%;
+	height: 410px;
+}
+
+
+/*未来影像右侧介绍部分*/
+
+.rowRight {
+	width: 100%;
+	margin-right: 0;
+}
+
+.rowRightText {
+	height: 250px;
+}
+
+.rowRightT1 {
+	text-align: center;
+}
+
+.rowRightT2 {
+	text-align: center;
+}
+
+.rowRightT3 {
+	text-align: center;
+}
+
+.rowRightT4 {
+	display: none;
+}
+
+
+/*折叠屏手机图片部分*/
+
+.picture5G {}
+
+.picture5G1 img {
+	margin-top: 150px;
+	height: 320px;
+}
+
+.picture5G2 img {
+	top: -55px;
+	left: 8%;
+	width: 60%;
+}
+
+
+/*展会活动轮播图部分*/
+
+.leftClick {
+	display: none;
+}
+
+.rightClick {
+	display: none;
+}
+
+.activeText a {
+	display: none;
+}
+
+.activeBanner1 {
+	position: relative;
+}
+
+.BannerLeft {
+	width: 100%;
+	position: absolute;
+}
+
+.BannerLeftCenter {
+	margin-top: 100px;
+	text-align: center;
+	overflow: hidden;
+}
+
+.BannerT1 {
+	padding-top: 140px;
+}
+
+.BannerT5 {
+	display: none;
+}
+
+.BannerRight {
+	float: none;
+	margin: 0 auto;
+	height: 500px;
+	position: absolute;
+}
+
+.BannerRight img {
+	width: 100%;
+	height: 230px;
+	margin-left: 58%;
+}
+
+
+/*成功故事部分*/
+
+.successCenter {
+	width: 98%;
+}
+
+.successText a {
+	display: none;
+}
+
+.successLi {
+	width: 97%;
+	height: 150px;
+	margin-bottom: 40px;
+	overflow: hidden;
+}
+
+#successLi2 {
+	margin: 0;
+	margin-bottom: 40px;
+}
+
+.successBody {
+	width: 98%;
+}
+
+.successBody img {
+	width: 37%;
+	float: right;
+	height: 100%;
+}
+
+.successBodyT {
+	padding: 0 3%;
+	margin: 0;
+	width: 57%;
+	height: 530px;
+}
+
+.successBodyT2 {
+	margin-top: 15px;
+}
+
+.successBodyTMore {
+	display: none;
+}
+
+
+/*近期新闻部分*/
+
+.news {
+	height: 915px;
+}
+
+.newsText {
+	margin: 0 3%;
+}
+
+.newsText a {
+	display: none;
+}
+
+.newsCenter {
+	width: 100%;
+}
+
+.newsLeft {
+	width: 100%;
+	overflow: hidden;
+}
+
+.newsLeftT1 {
+	text-align: center;
+}
+
+.newsLeftT2 {
+	text-align: center;
+}
+
+.newsLeftTMore {
+	display: none;
+}
+
+.newsLeftTMore1 {
+	margin-top: 25px;
+	text-align: center;
+	display: block;
+	line-height: 24px;
+}
+
+.newsRight {
+	margin-top: 30px;
+	width: 100%;
+}
+
+.newsList {
+	height: 80px;
+	overflow: hidden;
+}
+.newsList a{
+	font-size: 16px;
+}
+
+/*最下方联系,详情的部分*/
+.bottom{
+	height: 1150px;
+}
+.bottom1{
+	height: 745px;
+}
+.bottomText {
+	width: 100%;
+}
+.bottomText li{
+	display: inline-block;
+	width: 48%;
+}
+.bottomText2 li{
+	width: 48%;
+}
+.bottom3{
+	height: 180px;
+}
+/*页面最底部黑色区域部分*/
+.endBlack{
+	height: 5px;
+}
+.endBlackLeft{
+	width: 42%;
+	color: black;
+	margin: 0;
+	line-height: 20px;
+}
+.endBlackRight{
+	width: 49%;
+	line-height: 20px;
+	color: black;
+	margin: 0;
+}
+.endBlackRight a{
+	color: black;
 }
