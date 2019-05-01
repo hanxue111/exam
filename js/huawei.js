@@ -16,6 +16,17 @@ $(document).ready(function() {
 		$("#up2").toggle();
 		$("#down2").toggle();
 	});
+	/*黑色导航中集团网站的隐藏部分中向右动画图标*/
+	$(".webLi1 .webLi2 .webLi3").mouseenter(function() {
+		$("#right1").animate({
+			left: "+=25px"
+		});
+	});
+	$(".webLi1 .webLi2 .webLi3").mouseleave(function() {
+		$("#right1").animate({
+			left: "-=25px"
+		});
+	});
 	//白色导航中搜索框部分
  	$(".search").click(function(){
  		$(".mask").toggle();
@@ -25,6 +36,12 @@ $(document).ready(function() {
  		$(".input").toggle();
  	});
     
+	$(".search").click(function(){
+		$("body").css("overflow"," hidden");
+			},
+			function(){
+		$("body").css("overflow","scroll");
+	});
 
 
 	//白色导航中“手机，笔记本&平板...”的隐藏部分
@@ -167,7 +184,77 @@ $(document).ready(function() {
 		}, function() {
 			$(".btn_right").css("opacity", "0.5");
 		});
-
+//		未来影像手机图片部分手机触碰滑动效果
+		$(".rowScoll").mouseenter(function() {
+		$(".rowLeftA1").animate({
+			left: "+=20px"
+		});
+	});
+	$(".rowScoll").mouseleave(function() {
+		$(".rowLeftA1").animate({
+			left: "-=20px"
+		});
+	});
+	//未来影像部分右侧箭头触碰滑动效果
+		$(".rowRightText").mouseenter(function() {
+		$(".rowRightT41").animate({
+			left: "+=20px"
+		});
+	});
+	$(".rowRightText").mouseleave(function() {
+		$(".rowRightT41").animate({
+			left: "-=20px"
+		});
+	});
+	$(".activeBanner2").mouseleave(function() {
+		$(".BannerLeft2").animate({
+			left: "-=20px"
+		});
+	});
+	//成功故事箭头触碰滑动效果1
+		$("#successBodyT11").mouseenter(function() {
+		$(".TMore1").animate({
+			left: "+=20px"
+		});
+	});
+	$("#successBodyT11").mouseleave(function() {
+		$(".TMore1").animate({
+			left: "-=20px"
+		});
+	});
+	//成功故事箭头触碰滑动效果2
+$("#successBodyT22").mouseenter(function() {
+		$(".TMore2").animate({
+			left: "+=20px"
+		});
+	});
+	$("#successBodyT22").mouseleave(function() {
+		$(".TMore2").animate({
+			left: "-=20px"
+		});
+	});
+	//成功故事箭头触碰滑动效果3
+$("#successBodyT33").mouseenter(function() {
+		$(".TMore3").animate({
+			left: "+=20px"
+		});
+	});
+	$("#successBodyT33").mouseleave(function() {
+		$(".TMore3").animate({
+			left: "-=20px"
+		});
+	});
+	//近期新闻箭头触碰滑动效果
+		$("#newsLeftT").mouseenter(function() {
+		$(".TMore4").animate({
+			left: "+=20px"
+		});
+	});
+	$("#newsLeftT").mouseleave(function() {
+		$(".TMore4").animate({
+			left: "-=20px"
+		});
+	});
 		//第二块轮播图
 		$(function() {
 			var num = 0;
@@ -254,4 +341,5 @@ $(document).ready(function() {
 		});
 
 	});
+
 });

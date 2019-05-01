@@ -16,7 +16,9 @@ ul {
 	list-style: none;
 }
 
-
+.photo1.photo2,.photo3,.photo4{
+	display: none;
+}
 /*页面最顶部的黑色导航*/
 
 .navBlack {
@@ -90,24 +92,14 @@ ul {
 
 
 /*集团网站的隐藏部分中向右动画图标*/
-
-#right1 {
+.webLi{
 	position: relative;
 }
-
-#right1:hover {
-	animation: mymove 500ms;
+#right1{
+	padding-left: 3%;
+	position: absolute;
+	line-height: 30px;
 }
-
-@keyframes mymove {
-	from {
-		left: 0px;
-	}
-	to {
-		left: 30px;
-	}
-}
-
 
 /*黑色导航，右侧选择区域语言的下拉菜单*/
 
@@ -127,7 +119,6 @@ ul {
 .language a:hover {
 	text-decoration: underline;
 }
-
 
 /*黑色导航中选择区域/语言的隐藏部分*/
 
@@ -348,7 +339,8 @@ button {
 	height: 410px;
 	background-color: #F5F5F5;
 	display: none;
-	/*z-index: 111;*/
+	z-index: 1;
+	position: absolute;
 }
 
 .leftShow1Center {
@@ -416,6 +408,8 @@ button {
 	/*height: 410px;*/
 	background-color: #F5F5F5;
 	display: none;
+	z-index: 1;
+	position: absolute;
 }
 
 .leftShow2Center {}
@@ -476,6 +470,7 @@ button {
 	width: 33%;
 	font-size: 14px;
 	padding-top: 40px;
+	vertical-align: top;
 }
 
 .bodyfir2 {
@@ -694,7 +689,7 @@ button {
 }
 #li_list3thr a{
 	text-decoration: none;
-	color: black;
+	color: white;
 	font-size: 25px;
 }
 /*轮播图底部三块分栏*/
@@ -785,7 +780,7 @@ button {
 }
 
 
-/*未来影像，手机照片部分-*/
+/*未来影像,手机照片部分-*/
 
 .product-callout {
 	display: block;
@@ -808,18 +803,25 @@ button {
 	float: left;
 	position: absolute;
 	top: 60px;
-	left: 35%;
+	left: 60%;
 }
 
 .row {
 	height: 600px;
 }
-
+.rowScoll{
+	width: 55%;
+	display: inline-block;
+	position: relative;
+	
+}
 .rowLeft {
 	display: inline-block;
-	width: 45%;
+	width: 75%;
 	height: 380px;
 	background-color: #35BBDF;
+	border-top-right-radius:5px ;
+	border-bottom-right-radius:5px ;
 }
 
 .rowLeft img {
@@ -839,6 +841,9 @@ button {
 .rowLeftA {
 	margin-left: 20%;
 	margin-top: 70px;
+}
+.rowLeftA1{
+	position: absolute;
 }
 
 .rowLeftA a {
@@ -864,6 +869,8 @@ button {
 .rowRightImg img {
 	width: 100%;
 	height: 250px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
 }
 
 .rowRightText {
@@ -873,6 +880,9 @@ button {
 	height: 350px;
 	background-color: #DDE6ED;
 	border-bottom: 5px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	position: relative;
 }
 
 .rowRightT {
@@ -896,7 +906,10 @@ button {
 	font-size: 20px;
 	margin-top: 100px;
 }
-
+.rowRightT41{
+	padding-left: 3%;
+	position: absolute;
+}
 .rowRightT4 a {
 	text-decoration: none;
 	color: #000000;
@@ -1181,6 +1194,13 @@ button {
 	margin: 0 auto;
 	height: 250px;
 }
+#successBodyT11,#successBodyT22,#successBodyT33{
+	position: relative;
+}
+.TMore1,.TMore2,.TMore3{
+	position: absolute;
+	padding-left: 5%;
+}
 
 .successBodyT1 {
 	line-height: 40px;
@@ -1246,7 +1266,13 @@ button {
 	margin: 0 auto;
 	height: 250px;
 }
-
+#newsLeftT{
+	position: relative;
+}
+.TMore4{
+	position: absolute;
+	padding-left:3 % ;
+}
 .newsLeftT1 {
 	line-height: 40px;
 }
@@ -1284,7 +1310,7 @@ button {
 .newsList a {
 	text-decoration: none;
 	color: #000000;
-	line-height: 40px;
+	line-height: 50px;
 }
 
 
@@ -1353,8 +1379,34 @@ button {
 	width: 100%;
 	height: 200px;
 }
-
-
+.bottomIcon{
+	display: inline-block;
+	width: 10%;
+	margin-top: 45px;
+	padding-left: 2%;
+}
+.bottomIcon li{
+	line-height: 40px;
+	font-size: 22px;
+}
+.bottomIcon i:hover{
+	color: #B5BCC3;
+}
+.bottom a:hover{
+	text-decoration: underline;
+}
+.bottom2 i{
+	display: none;
+}
+.bottom2 a:hover i{
+	display: inline-block;
+}
+.bottom3 i{
+	display: none;
+}
+.bottom3 a:hover i{
+	display: inline-block;
+}
 /*页面最底部的黑色地址区域*/
 
 .endBlack {
